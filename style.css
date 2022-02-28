@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -63,22 +66,88 @@
     
 }
 .home .max-width {
+    height: 5vh;
     margin-left: 0px;
     margin-right: auto;
     padding-left: 20vw;
     padding-right: 20vw;
     background: rgba(75, 75, 75, 0.7);
     padding-top: 45vh;
-    padding-bottom: 100vh; 
+    padding-bottom: 55vh; 
+}
+.home .home-content .button1{
+    color: black;
+}
+.home .home-content{
+    height: 10vh;
 }
 .home .home-content .text-1 {
     font-weight: 600;
     font-size: 40px;
     max-width: 200px;
+    
     color: blanchedalmond;
+    padding-bottom: 50px;
 }
 .home .home-content .text-1 span{
     
     color: #FFCC33;
     
 }
+/* button */
+.home .home-content .noselect{
+}
+#btn {
+    background: #3366FF;
+    height: 50px;
+    max-width: 150px;
+    border: none;
+    
+    color: #FFCC33;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+  
+  #btn #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  #btn:hover {
+    background: transparent;
+  }
+  
+  #btn:hover #circle {
+    height: 30px;
+    width: 150px;
+    
+    margin-top: 20px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
