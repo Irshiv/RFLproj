@@ -55,7 +55,7 @@
     height: 100vh;
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
-    color: #fff;
+    
 }
 .home .max-width {
     margin-left: 0px;
@@ -70,6 +70,7 @@
     font-weight: 600;
     font-size: 40px;
     max-width: 12vw;
+    color: blanchedalmond;
 }
 .home .home-content .text-1 span{
     
