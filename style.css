@@ -14,7 +14,7 @@
     width: 100%;
     background: #828382;
     font-family: 'Ubuntu',sans-serif;
-    padding: 20px;
+    padding: 10px;
     transition: all 0.3s ease;
     z-index: 999;
 }
@@ -34,8 +34,10 @@
 }
 .navbar .menu li{
     list-style: none;
-    display: inline-block;
-    
+    display: inline-block;    
+}
+.navbar .menu li a:hover{
+    color: #FFCC33;
 }
 .navbar .menu li a{
     color: blanchedalmond;
@@ -95,10 +97,9 @@
     
 }
 /* button */
-.home .home-content .noselect{
-}
+
 #btn {
-    background: #3366FF;
+    background: #ADC2FF;
     height: 50px;
     max-width: 150px;
     border: none;
