@@ -12,7 +12,12 @@
     background: #828382;
     font-family: 'Ubuntu',sans-serif;
     padding: 20px;
+    transition: all 0.3s ease;
     z-index: 999;
+}
+.navbar.sticky{
+    padding: 10px 0;
+    background: steelblue;
 }
 .navbar .logo a {
     font-weight: 700;
@@ -64,12 +69,12 @@
     padding-right: 20vw;
     background: rgba(75, 75, 75, 0.7);
     padding-top: 45vh;
-    padding-bottom: 43vh;
+    padding-bottom: 100vh; 
 }
 .home .home-content .text-1 {
     font-weight: 600;
     font-size: 40px;
-    max-width: 7vw;
+    max-width: 200px;
     color: blanchedalmond;
 }
 .home .home-content .text-1 span{
