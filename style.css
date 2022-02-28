@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #828382;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 20px;
+    z-index: 999;
+}
+.navbar .logo a {
+    font-weight: 700;
+    font-size: 35px;
+    color: bisque;
+
+}
+.navbar .menu{
+    margin-left: auto; 
+    margin-right: 0;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.navbar .menu li a{
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-width{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Home Section Styling */
+.home{
+    display: flex;
+    background: url("Images/nood.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+    color: #fff;
+}
+.home .max-width {
+    margin-left: 0px;
+    margin-right: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    background: rgba(75, 75, 75, 0.7);
+    padding-top: 45vh;
+    padding-bottom: 43vh;
+}
+.home .home-content .text-1 {
+    font-weight: 600;
+    font-size: 40px;
+    max-width: 12vw;
+}
+.home .home-content .text-1 span{
+    
+    color: #FFCC33;
+    
+}
