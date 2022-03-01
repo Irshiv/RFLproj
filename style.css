@@ -12,7 +12,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: #828382;
+    background: #261A07;
     font-family: 'Ubuntu',sans-serif;
     padding: 10px;
     transition: all 0.3s ease;
@@ -66,6 +66,12 @@
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
     
+}
+.home2{
+    background-color:  #D9E5F8;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
 }
 .home .max-width {
     height: 5vh;
