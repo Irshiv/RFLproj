@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-
+*, *:before, *:after {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
 .body{
 background: blanchedalmond;
 }
@@ -81,6 +84,7 @@ background: blanchedalmond;
     height: 75vh;
     min-height: 700px;
     font-family: 'Ubuntu',sans-serif;
+    overflow: hidden;
 }
 .featuredwrapper{
   position: absolute;
@@ -112,7 +116,7 @@ background: blanchedalmond;
 }
 .home2{
     background-color:  blanchedalmond;
-    height: 100vh;
+    height: 200vh;
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
 }
@@ -209,81 +213,389 @@ background: blanchedalmond;
   }
 
   /* Recipe Card */
-  .recipe-card {
-    position: relative;
-    border:1px solid #f0f1f3;
-    width: 300px;
-    margin: 50px 0.5vw 50px 0.5vw;
-  }
-  .recipe-card__body {    
-      padding: 20px;
-      background-color: blanchedalmond;
-  }
-  .recipe-card__heading {
-    padding: 0;
-    margin: 0 0 0;
-    color: #444;
-  }
-  .recipe-card__subhead {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  .recipe-card__ingredients {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 10px;
-    column-count: 1;
-  }
-  .recipe-card__ingredients li {
-      margin-bottom: 5px;
-    }
-    .recipe-card__ingredients li:before {
-      content: '\2022';
-      color: #eb9376;
-      margin-right: 5px;
-    }
-  
-  
-  .recipe-card__nav {
-    margin: 0 0 20px;
-    padding: 0;
-    border-bottom: 1px solid #eb9376;
-  }
-    .recipe-card__nav li {
-      display: inline-block;
-      margin-right: 30px
-    }
-    .recipe-card__nav h3 {
-      margin: 0;
-      padding: 0;
-    }
-    .recipe-card__nav h3:after {
-      content: '';
-      display: block;
-      width: 0%;
-      padding-top: 10px;
-      margin: 0 auto;
-      border-bottom: 5px solid #eb9376;
-      transition: width 250ms ease-in-out 0s;
-    }
-    .recipe-card__nav  h3:hover {
-      cursor: pointer;
-    }
-    .recipe-card__nav h3:hover:after, h3.active:after {
-     width: 100%; 
-    }
-  
-  
-  @media (min-width:599px) {
-    .recipe-card {
-      width: 600px
-    }
-    .recipe-card__ingredients {
-      column-count: 2
-    }
-  }
+ 
+#container {
+  width: 30%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 0vh auto 0 auto;
+  top: 50%;
+  min-width: 400px;
+  transform: translate(0%, 0%);
+}
+
+#container.closed header { cursor: pointer; }
+header { cursor: pointer; }
+
+.header {
+  width: 100%;
+  height: 250px;
+  background: center / cover;
+  background-image: url(https://3.bp.blogspot.com/-v7vHC8w2AKs/TbbD-X8BhTI/AAAAAAAAAJ4/LCcrwIaMgf0/s1600/Mint+Julep+glass+tools.jpg);
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#container.closed .title {
+  padding: 40px 20px 10px 20px;
+  margin-top: -87px;
+  color: white;
+  border: none;
+}
+
+.title:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  opacity: 0;
+}
+
+#container.closed .title:before {
+  opacity: 1;
+}
+
+article {
+  padding: 25px 30px;
+  overflow: hidden;
+  max-height: 400px;
+} 
+
+#container.closed article {
+  max-height: 0px;
+  padding: 0 30px;
+}
+
+.ingredients {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  font-size: 0.9rem;
+}
+
+.ingredients > li {
+  list-style-type: none;
+  display: flex;
+  margin: 4px 0px;
+}
+
+.ingredients > li > .amount {
+  width: 80px;
+  color: #1976D2;
+}
+
+.preperation > div {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* card 2 */
+#container2 {
+  width: 30%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 0vh auto 0 auto;
+  top: 50%;
+  min-width: 400px;
+  transform: translate(0%, 0%);
+}
+
+#container2.closed2 header { cursor: pointer; }
+header { cursor: pointer; }
+
+.header2 {
+  width: 100%;
+  height: 250px;
+  background: center / cover;
+  background-image: url(https://3.bp.blogspot.com/-v7vHC8w2AKs/TbbD-X8BhTI/AAAAAAAAAJ4/LCcrwIaMgf0/s1600/Mint+Julep+glass+tools.jpg);
+}
+
+.title2 {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#container2.closed2 .title2 {
+  padding: 40px 20px 10px 20px;
+  margin-top: -87px;
+  color: white;
+  border: none;
+}
+
+.title2:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  opacity: 0;
+}
+
+#container2.closed2 .title:before {
+  opacity: 1;
+}
+
+article {
+  padding: 25px 30px;
+  overflow: hidden;
+  max-height: 400px;
+} 
+
+#container2.closed2 article {
+  max-height: 0px;
+  padding: 0 30px;
+}
+
+.ingredients2 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  font-size: 0.9rem;
+}
+
+.ingredients2 > li {
+  list-style-type: none;
+  display: flex;
+  margin: 4px 0px;
+}
+
+.ingredients2 > li > .amount2 {
+  width: 80px;
+  color: #1976D2;
+}
+
+.preperation2 > div {
+  margin-bottom: 10px;
+}
+
+/* card 3 */
+
+#container3 {
+  width: 30%;
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 0vh auto 0 auto;
+  top: 50%;
+  min-width: 400px;
+  transform: translate(0%, 0%);
+}
+
+#container3.closed3 header { cursor: pointer; }
+header { cursor: pointer; }
+
+.header3 {
+  width: 100%;
+  height: 250px;
+  background: center / cover;
+  background-image: url(https://3.bp.blogspot.com/-v7vHC8w2AKs/TbbD-X8BhTI/AAAAAAAAAJ4/LCcrwIaMgf0/s1600/Mint+Julep+glass+tools.jpg);
+}
+
+.title3 {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#container3.closed3 .title3 {
+  padding: 40px 20px 10px 20px;
+  margin-top: -87px;
+  color: white;
+  border: none;
+}
+
+.title3:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  opacity: 0;
+}
+
+#container3.closed3 .title:before {
+  opacity: 1;
+}
+
+article {
+  padding: 25px 30px;
+  overflow: hidden;
+  max-height: 400px;
+} 
+
+#container3.closed3 article {
+  max-height: 0px;
+  padding: 0 30px;
+}
+
+.ingredients3 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  font-size: 0.9rem;
+}
+
+.ingredients3 > li {
+  list-style-type: none;
+  display: flex;
+  margin: 4px 0px;
+}
+
+.ingredients3 > li > .amount3 {
+  width: 80px;
+  color: #1976D2;
+}
+
+.preperation3 > div {
+  margin-bottom: 10px;
+}
+
+
 
   /* Recipes Page */
 
+  .home2 .featured {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 0px;
+    font-size: 50px;
+}
+  
+.home2 .category {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 120px 100px 100px 100px;
+    margin: -80px;
+}
+.home2 .category .vegetarian {
+    padding: inherit;
+    height: 300px;
+    width: 445px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    background: url('images/veg2.jpg');
+    background-size: cover;
+    border: 3px outset;
+    border-radius: 5px;
+}
+
+
+.home2 .category .pasta {
+    padding: inherit;
+    height: 300px;
+    width: 445px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    background: url('images/pasta.jpg');
+    background-size: cover;
+    border: 3px outset;
+    border-radius: 5px;
+}
+
+.home2 .category .asian {
+    padding: inherit;
+    height: 300px;
+    width: 445px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    background: url('images/dimsum.jpg');
+    background-size: cover;
+    border: 3px outset;
+    border-radius: 5px;
+}
+
+.home2 .category .dessert {
+    padding: inherit;
+    height: 300px;
+    width: 445px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    background: url('images/GoodDesserts.png');
+    background-size: cover;
+    border: 3px outset;
+    border-radius: 5px;
+}
+
+.home2 .category .soup {
+    padding: inherit;
+    height: 300px;
+    width: 445px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    background: url('images/soup.jpg');
+    background-size: cover;
+    border: 3px outset;
+    border-radius: 5px;
+}
+
+.home2 .category .gfree {
+    padding: inherit;
+    height: 300px;
+    width: 445px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    background: url('images/gfree.jpg');
+    background-size: cover;
+    border: 3px outset;
+    border-radius: 5px;
+}
