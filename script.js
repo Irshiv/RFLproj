@@ -8,6 +8,18 @@ $(document).ready(function(){
         }
     })
 })
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if(this.scrollY >20){
+          $('.logo1').addClass("disp")
+      }else{
+          $('.logo1').removeClass("disp")
+      }
+  })
+})
+
+
+
 // typing animation script
 var typed = new Typed(".typing",{
     strings: ["Life", "Love", "You"],

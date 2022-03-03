@@ -24,14 +24,20 @@ background: blanchedalmond;
     z-index: 999;
 }
 .navbar.sticky{
-    padding: 10px 0;
+    padding: 0px 0;
+    
     background: #009999;
 }
 .navbar .logo a {
     font-weight: 700;
     font-size: 35px;
     color: bisque;
-
+}
+.navbar .logo1 {
+  transition: all 1s ease;
+}
+.logo1.disp {
+  opacity: 0;
 }
 .navbar .menu{
     margin-left: auto; 
@@ -91,8 +97,8 @@ background: blanchedalmond;
   margin-top: 100vh;
   align-items: center;
   text-align: center;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-top: 3vh;
+  padding-bottom: auto;
   width: 100%;
   min-height: 15VH;
   background-image: url("Images/board.jpg") ;
@@ -100,15 +106,15 @@ background: blanchedalmond;
   
   background-position: center center;
   border-style: outset;
-  border-color: blanchedalmond;
+  border-color: rgb(0, 0, 0);
 }
 .featuredrecipes{
   
   
   background-color: #261A07;
-  font: bold 50px arial, sans-serif;
+  font: bold 75px 'Ubuntu', sans-serif;
   color: transparent;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.836);
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
@@ -599,3 +605,4 @@ article {
     border: 3px outset;
     border-radius: 5px;
 }
+/* recipe page */
