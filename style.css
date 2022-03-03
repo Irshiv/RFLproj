@@ -25,7 +25,7 @@ background: blanchedalmond;
 }
 .navbar.sticky{
     padding: 10px 0;
-    background: steelblue;
+    background: #009999;
 }
 .navbar .logo a {
     font-weight: 700;
@@ -126,7 +126,7 @@ background: blanchedalmond;
     margin-right: auto;
     padding-left: 20vw;
     padding-right: 20vw;
-    background: rgba(75, 75, 75, 0.7);
+    background: rgba(75, 75, 75, 0);
     padding-top: 45vh;
     padding-bottom: 55vh; 
     min-height: 700px;
@@ -158,14 +158,14 @@ background: blanchedalmond;
 /* button */
 
 #btn {
-    background: #ADC2FF;
+    background: blanchedalmond;
     height: 50px;
     max-width: 150px;
     border: none;
     
-    color: #FFCC33;
+    color: #B35D24;
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 500;
     font-family: 'Ubuntu',sans-serif;
     position: relative;
     transition: 1s;
