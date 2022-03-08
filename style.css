@@ -127,7 +127,11 @@ background: blanchedalmond;
     height: 100vh;
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
+    background: url("Images/wood.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 .home .max-width {
     height: 5vh;
     margin-left: 0px;
@@ -745,4 +749,41 @@ article {
 .wprm-recipe wprm-recipe-natasha{
   display: flex;
   
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.534);
+  color: #eee;
+  width: 30vw;
+  margin-left: 0;
+  padding-top: 0;
+  padding-left: 50px;
+  margin-right: auto;
+  height: 100%;
+  padding-right: 20px;
+  justify-content: center;
+}
+.about-home{
+  width: 100vw;
+  
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  height: 100vh;
+  display: flex;
+  background: url("Images/nood.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+    
+}
+.about-title{
+  color: #eee;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
 }
