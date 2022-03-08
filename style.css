@@ -528,7 +528,7 @@ article {
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 3px black;
-    background: url('images/veg2.jpg');
+    background: url('Images/veg2.jpg');
     background-size: cover;
     border: 3px outset;
     border-radius: 5px;
@@ -545,7 +545,7 @@ article {
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 3px black;
-    background: url('images/pasta.jpg');
+    background: url('Images/pasta.jpg');
     background-size: cover;
     border: 3px outset;
     border-radius: 5px;
@@ -561,7 +561,7 @@ article {
     font-weight: bold;
     text-shadow: 3px 3px black;
     text-align: center;
-    background: url('images/dimsum.jpg');
+    background: url('Images/dimsum.jpg');
     background-size: cover;
     border: 3px outset;
     border-radius: 5px;
@@ -577,7 +577,7 @@ article {
     font-weight: bold;
     text-shadow: 3px 3px black;
     text-align: center;
-    background: url('images/GoodDesserts.png');
+    background: url('Images/GoodDesserts.png');
     background-size: cover;
     border: 3px outset;
     border-radius: 5px;
@@ -593,7 +593,7 @@ article {
     font-weight: bold;
     text-shadow: 3px 3px black;
     text-align: center;
-    background: url('images/soup.jpg');
+    background: url('Images/soup.jpg');
     background-size: cover;
     border: 3px outset;
     border-radius: 5px;
@@ -609,7 +609,7 @@ article {
     font-weight: bold;
     text-shadow: 3px 3px black;
     text-align: center;
-    background: url('images/gfree.jpg');
+    background: url('Images/gfree.jpg');
     background-size: cover;
     border: 3px outset;
     border-radius: 5px;
@@ -625,7 +625,7 @@ article {
   font-weight: bold;
   text-align: center;
   text-shadow: 3px 3px black;
-  background: url('images/gfree.png');
+  background: url('Images/gfree.png');
   background-size: cover;
   border: 3px outset;
   border-radius: 5px;
@@ -642,7 +642,7 @@ article {
   font-weight: bold;
   text-align: center;
   text-shadow: 3px 3px black;
-  background: url('images/keto.png');
+  background: url('Images/keto.png');
   background-size: cover;
   border: 3px outset;
   border-radius: 5px;
@@ -658,7 +658,7 @@ article {
   font-weight: bold;
   text-shadow: 3px 3px black;
   text-align: center;
-  background: url('images/lowfat.png');
+  background: url('Images/lowfat.png');
   background-size: cover;
   border: 3px outset;
   border-radius: 5px;
@@ -674,7 +674,7 @@ article {
   font-weight: bold;
   text-shadow: 3px 3px black;
   text-align: center;
-  background: url('images/medit.png');
+  background: url('Images/medit.png');
   background-size: cover;
   border: 3px outset;
   border-radius: 5px;
@@ -690,7 +690,7 @@ article {
   font-weight: bold;
   text-shadow: 3px 3px black;
   text-align: center;
-  background: url('images/diabete.png');
+  background: url('Images/diabete.png');
   background-size: cover;
   border: 3px outset;
   border-radius: 5px;
@@ -706,7 +706,7 @@ article {
   font-weight: bold;
   text-shadow: 3px 3px black;
   text-align: center;
-  background: url('images/vegan.png');
+  background: url('Images/vegan.png');
   background-size: cover;
   border: 3px outset;
   border-radius: 5px;
