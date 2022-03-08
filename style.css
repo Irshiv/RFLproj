@@ -74,7 +74,9 @@ background: blanchedalmond;
     display: flex;
     background: url("Images/nood.jpg") no-repeat center;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 100%;
+    
 
     font-family: 'Ubuntu',sans-serif;
     
@@ -122,7 +124,7 @@ background: blanchedalmond;
 }
 .home2{
     background-color:  blanchedalmond;
-    height: 200vh;
+    height: 100vh;
     min-height: 500px;
     font-family: 'Ubuntu',sans-serif;
 }
@@ -498,7 +500,7 @@ article {
     color: black;
     font-weight: bold;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 5px;
     padding-bottom: 0px;
     font-size: 50px;
 }
@@ -506,8 +508,11 @@ article {
 .home2 .category {
     display: flex;
     justify-content: space-evenly;
-    padding: 120px 100px 100px 100px;
-    margin: -80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-height: 100vh;
 }
 .home2 .category .vegetarian {
     padding: inherit;
@@ -605,4 +610,139 @@ article {
     border: 3px outset;
     border-radius: 5px;
 }
+/* Diets Page */
+.home2 .category .gfree2 {
+  padding: inherit;
+  height: 300px;
+  width: 445px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  background: url('images/gfree.png');
+  background-size: cover;
+  border: 3px outset;
+  border-radius: 5px;
+}
+
+
+.home2 .category .keto {
+  padding: inherit;
+  height: 300px;
+  width: 445px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  background: url('images/keto.png');
+  background-size: cover;
+  border: 3px outset;
+  border-radius: 5px;
+}
+
+.home2 .category .lowf {
+  padding: inherit;
+  height: 300px;
+  width: 445px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  background: url('images/lowfat.png');
+  background-size: cover;
+  border: 3px outset;
+  border-radius: 5px;
+}
+
+.home2 .category .mediterranean {
+  padding: inherit;
+  height: 300px;
+  width: 445px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  background: url('images/medit.png');
+  background-size: cover;
+  border: 3px outset;
+  border-radius: 5px;
+}
+
+.home2 .category .diabetes {
+  padding: inherit;
+  height: 300px;
+  width: 445px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  background: url('images/diabete.png');
+  background-size: cover;
+  border: 3px outset;
+  border-radius: 5px;
+}
+
+.home2 .category .vegan {
+  padding: inherit;
+  height: 300px;
+  width: 445px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  background: url('images/vegan.png');
+  background-size: cover;
+  border: 3px outset;
+  border-radius: 5px;
+}
 /* recipe page */
+.recipe-page-template {
+  background: rgba(238, 238, 238, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin: auto;
+  
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: auto;
+  height: 100%;
+  min-width: 800px;
+  background: blanchedalmond;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.videowrapper {
+  margin: auto;
+  
+}
+.recipe-title{
+  font-size: 50px;
+}
+.calender{
+  width: 50vw;
+  padding-top: 200px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  height: 100vh;
+}
+.wprm-recipe wprm-recipe-natasha{
+  display: flex;
+  
+}
